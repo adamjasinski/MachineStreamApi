@@ -11,7 +11,9 @@ namespace MachineStreamApi.Controllers
             return new ContentResult
             {
                 Content =
-                @"<p>Machine stream event API</p><p>Please use /api/machines endpoint with a HTTP REST client</p>"
+                @"<p>Machine stream event API</p>"
+                + "<p>Please use /api/machines endpoints with a HTTP REST client</p>",
+                ContentType = "text/html"
             };
         }
     }
